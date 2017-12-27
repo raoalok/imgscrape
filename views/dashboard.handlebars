@@ -1,0 +1,48 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-2">
+    </div>
+
+    <div class="col-sm-8">
+
+    <div class="panel">
+      <div class="panel-heading">
+        <h3 class="panel-title">Scrape Keyword Images</h3>
+      </div>
+      <div class="panel-body">
+
+        <div id="x">   </div>
+
+    
+        
+        
+      </div>
+    </div>
+      
+    </div>
+    
+    <div class="col-sm-2">
+    </div>
+  </div>
+</div>
+
+
+<script>
+
+var keyword = "{{word}}";
+console.log(keyword);
+
+for(var i=0; i<15; i++){
+
+var img = document.createElement("img");
+        
+img.src = "https://s3.us-east-2.amazonaws.com/imagescrape/"+keyword+[i]+".jpg";
+var src = document.getElementById("x");
+ 
+src.appendChild(img);
+
+}
+
+
+
+</script>
